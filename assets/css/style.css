@@ -24,6 +24,8 @@
 
 .cta {
   background-image: url('../images/ranches.svg');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero__content {
