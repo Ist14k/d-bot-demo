@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Discord Bot</title>
@@ -12,7 +13,7 @@
   <body class="bg-base-500">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container d-flex justify-content-between">
-        <a class="navbar-brand fw-bolder" href="index.html">DiscordBot</a>
+        <a class="navbar-brand fw-bolder" href="/">DiscordBot</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -82,7 +83,10 @@
     </section>
     <section id="features" class="features py-5">
       <main class="container text-light">
-        <div class="d-flex flex-column-reverse gap-5 align-items-center flex-md-row mb-5 py-5">
+        <div
+          data-aos="fade-left"
+          class="d-flex flex-column-reverse gap-5 align-items-center flex-md-row mb-5 py-5"
+        >
           <div class="content d-flex flex-column justify-content-center">
             <h2 class="mb-4">Welcome Bot for Discord: Say hi to the new users on your Discord Server</h2>
             <p class="mb-4 text-secondary">
@@ -95,7 +99,10 @@
           </div>
           <img class="img-fluid w-50" src="assets/images/f-1.webp" alt="" />
         </div>
-        <div class="d-flex flex-column-reverse gap-5 align-items-center flex-md-row-reverse mb-5 py-5">
+        <div
+          data-aos="fade-right"
+          class="d-flex flex-column-reverse gap-5 align-items-center flex-md-row-reverse mb-5 py-5"
+        >
           <div class="content d-flex flex-column justify-content-center">
             <h2 class="mb-4">The Discord Bot to easily create your own Custom Commands</h2>
             <p class="mb-4 text-secondary">
@@ -111,7 +118,10 @@
           </div>
           <img class="img-fluid w-50" src="assets/images/f-2.webp" alt="" />
         </div>
-        <div class="d-flex flex-column-reverse gap-5 align-items-center flex-md-row mb-5 py-5">
+        <div
+          data-aos="fade-left"
+          class="d-flex flex-column-reverse gap-5 align-items-center flex-md-row mb-5 py-5"
+        >
           <div class="content d-flex flex-column justify-content-center">
             <h2 class="mb-4">Quickly set up streaming & social media alerts</h2>
             <p class="mb-4 text-secondary">
@@ -130,7 +140,10 @@
           </div>
           <img class="img-fluid w-50" src="assets/images/f-3.webp" alt="" />
         </div>
-        <div class="d-flex flex-column-reverse gap-5 align-items-center flex-md-row-reverse mb-5 py-5">
+        <div
+          data-aos="fade-right"
+          class="d-flex flex-column-reverse gap-5 align-items-center flex-md-row-reverse mb-5 py-5"
+        >
           <div class="content d-flex flex-column justify-content-center">
             <h2 class="mb-4">The best Discord Bot to give users the freedom to choose roles by reacting</h2>
             <p class="mb-4 text-secondary">
@@ -144,7 +157,10 @@
           </div>
           <img class="img-fluid w-50" src="assets/images/f-4.webp" alt="" />
         </div>
-        <div class="d-flex flex-column-reverse gap-5 align-items-center flex-md-row mb-5 py-5">
+        <div
+          data-aos="fade-left"
+          class="d-flex flex-column-reverse gap-5 align-items-center flex-md-row mb-5 py-5"
+        >
           <div class="content d-flex flex-column justify-content-center">
             <h2 class="mb-4">Levels and XP in your Discord Server</h2>
             <p class="mb-4 text-secondary">
@@ -163,8 +179,10 @@
     </section>
     <section class="clients bg-base-700 py-5">
       <main class="container text-light">
-        <h1 class="text-center fs-4 mb-5">D-Bot, the Discord Bot trusted by 19+ million servers.</h1>
-        <div class="d-flex flex-wrap gap-3">
+        <h1 data-aos="fade-right" class="text-center fs-4 mb-5">
+          D-Bot, the Discord Bot trusted by 19+ million servers.
+        </h1>
+        <div data-aos="fade-left" class="d-flex flex-wrap gap-3">
           <div class="d-flex gap-3 align-items-center bg-base-500 rounded-3 card-basis flex-grow-1 p-2">
             <img width="75" src="./assets/images/discord.webp" alt="" />
             <div class="d-flex flex-column justify-content-between">
@@ -241,7 +259,7 @@
     </section>
     <section class="core py-5">
       <main class="container text-light d-flex flex-column gap-5 flex-lg-row justify-content-md-between">
-        <div class="d-flex flex-column align-items-center align-items-md-start">
+        <div data-aos="fade-right" class="d-flex flex-column align-items-center align-items-md-start">
           <h3 class="mb-5 text-center text-md-start">
             The best Discord Bot for moderation <br />
             with plenty other plugins
@@ -249,7 +267,7 @@
           <a class="btn btn-primary btn-lg" href="#" role="button">Add to Discord</a>
         </div>
 
-        <div class="d-flex flex-wrap basis-75 gap-3 gap-md-5 justify-content-around">
+        <div data-aos="fade-left" class="d-flex flex-wrap basis-75 gap-3 gap-md-5 justify-content-around">
           <div class="basis-45">
             <svg
               width="48"
@@ -582,5 +600,9 @@
       </main>
     </footer>
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
